@@ -1,0 +1,130 @@
+.container-5 {
+  background-image: url('https://th.bing.com/th/id/R.903cee3d9064c41a03fbb816ef18d149?rik=b8PYuBfh7VnOFA&riu=http%3a%2f%2fwww.wallpapermaiden.com%2fimage%2f2018%2f10%2f04%2fshiny-lines-points-circles-geometry-map-cyberspace-25257-resized.jpeg&ehk=uXter7xU6TWF8dQ4%2bQCs1HnkY9Hvp4t8A3K3%2fviuMQw%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+}
+
+.background-image-container {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.edit-Page-container {
+  flex: 1;
+  background-color: #111010;
+  padding: 20px;
+  border-radius: 2px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  max-height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Add align-items to center align content vertically */
+  justify-content: center;
+  overflow-y: hidden;
+  
+}
+
+/* EditPage-specific styles */
+
+.container-5 .edit-Page-container {
+  margin-top: 0;
+}
+
+.container-5 .edit-Page-container form {
+  margin-top: 10px;
+}
+
+.edit-Page-container h5 {
+  font-size: xx-large;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: auto;
+  color: white;
+}
+
+
+.edit-Page-container form {
+  margin-top: 10px;
+}
+
+.edit-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:#080808;
+}
+
+.edit-Page-container input[type="text"],
+.edit-Page-container select {
+  width: 200%; /* Input fields will now take up 100% width of the container */
+  max-width: 200px; /* Adjust the width as per your preference */
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 1px;
+  color: #080808;
+  
+}
+
+.edit-Page-container .error {
+  color: red;
+  font-size: 12px;
+}
+
+.edit-Page-container .radio-container {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.edit-Page-container .radio-label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.edit-Page-container .radio-label input[type="radio"] {
+  display: none;
+}
+
+.edit-Page-container .radio-label .radio-button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-right: 5px;
+}
+
+.edit-container .radio-label input[type="radio"]:checked + .radio-button {
+  border-color: #45a049;   
+}
+
+.edit-Page-container .radio-label.red input[type="radio"]:checked + .radio-button {
+  border-color: #f20606;  
+}
+
+.edit-Page-container button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-Page-container button[type="submit"]:hover {
+  background-color: #45a049;
+}

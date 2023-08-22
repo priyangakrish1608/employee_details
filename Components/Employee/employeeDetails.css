@@ -1,0 +1,31 @@
+.employee-details {
+    background-image: url('https://wallpapercave.com/wp/wp5972820.jpg');
+    background-size: 100% 100%;
+    background-position: sticky;
+    text-align: center;
+    font: 1em sans-serif;
+    color: #ffffff;
+    padding: 20px;
+    position: sticky;
+    overflow: hidden; /* Ensure the element doesn't expand to fit the pseudo-element */
+  
+    /* Add relative positioning to the container */
+    position: relative;
+  }
+  
+  
+  
+
+  .loading,
+  .error,
+  .not-found {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+  }
+
+ 
+
+  
+
+  

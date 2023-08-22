@@ -1,0 +1,104 @@
+.table-container {
+  width: 100%;
+  top: 50px;
+  position: relative;
+  margin-bottom: 20px;
+  outline: 1px solid black;
+  padding: 5px;
+  overflow-x: auto; 
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead {
+  background-color: white;
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Position the header at the top of the container */
+  z-index: 1; /* Set a higher z-index to ensure the header stays on top */
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #f41414;
+  
+}
+
+th {
+  font-size: large;
+  font-weight: bold;
+  /* Prevent table cell content from wrapping */
+  overflow: hidden; /* Add overflow to ensure content is visible */
+  text-overflow: ellipsis; 
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #fa0000;
+  position: relative;
+  
+}
+
+/*th::after(even) {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fa0000;
+}*/
+tbody tr:nth-child(even) {
+  background-color: #e3dcdc;
+}
+
+tbody tr:hover {
+  background-color: #98a37c;
+}
+
+td {
+  padding-left: 1px; /* Add some left padding to the table cells */
+  padding-right: 1px; /* Add some right padding to the table cells */
+}
+
+.edit-button {
+  background-color: #45a049;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-button {
+  background-color:blue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.edit-button,
+.view-button,
+.delete-button {
+  
+  border: none;
+  padding: 5px 10px; 
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}

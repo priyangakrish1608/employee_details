@@ -1,0 +1,109 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 0 0px; /* Adjust the padding as needed */
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://kbo-iak.de/fileadmin/_processed_/d/1/csm_iStock-1248161434_9d0bb087a9.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: slowMotion 20s infinite;
+  pointer-events: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: slowMotion 20s infinite;
+  pointer-events: none;
+  outline: none;
+}
+
+.overlay:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(147, 139, 86, 0.5);
+}
+
+.text-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.animated-text {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  animation: fadeInOut 5s infinite;
+}
+
+.button-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 150px;
+  
+}
+
+.button-wrapper button {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  border: none;
+}
+
+@keyframes slowMotion {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
